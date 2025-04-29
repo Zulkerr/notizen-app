@@ -1,0 +1,36 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizen-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝Meine Notizen</h1>
+
+        <div class="note-input">
+           <textarea  id="noteText" placeholder="Schreib etwas..."></textarea>
+           <select  id="noteCategory">
+              <option value="Allgemein">Allgemein</option>
+              <option value="Privat">Privat</option>
+              <option value="Arbeit">Arbeit</option>
+              <option value="Ideen">Ideen</option>
+           </select>
+           <button id="addNoteBtn">Notiz speichern</button>
+        </div>
+
+        <div class="note-search">
+           <input type="text" id="searchInput" placeholder="Suche nach Stichwort...">
+        </div>
+        
+        <div id="noteList" class="notes-list">
+            <!-- Notizen werden hier eingefügt -->
+        </div>
+    </div>
+    
+ <script src="script.js"></script>
+</body>
+</html>
